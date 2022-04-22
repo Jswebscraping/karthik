@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+  <head>
+    
+    <script >
+
+function calc()
+{
+  var a=0;
+  var b=1;
+  var arr = [0,1];
+
+var n=document.getElementById("num1").value;
+
+for(var i=1;i<=n;i++)
+{
+  c=a+b; 
+  arr.push(c);
+  a=b; 
+  b=c;
+}
+document.getElementById("res").innerHTML="Fibonaci  series "+arr;
+
+  
+
+}
+
+    </script>
+  </head>
+
+  <body>
+    Enter Number : <input type='number' id='num1'><br>
+    <input type='submit' onclick=calc()>
+    <div id='res'></div>
+  </body>
+</html>

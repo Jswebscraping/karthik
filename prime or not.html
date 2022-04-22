@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script >
+
+function calc()
+{
+
+    var i;
+    var number=document.getElementById("num1").value;
+
+for(var i=2;i<=number;i++)
+{
+
+if(number % i == 0) break;
+}
+if(number ==i)
+document.write("it is prime")
+else document.write("it is not prime")
+
+}
+
+
+
+    </script>
+  </head>
+
+  <body>
+    <h1>prime or not</h1>
+    Enter Number : <input type='number' id='num1'><br>
+    <input type='submit' onclick=calc()>
+    <div id='res'></div>
+  </body>
+</html>
